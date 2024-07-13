@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  clojure-srv:
+    build: clojure-srv
+
+  db:
+    image: tutun/influxdb
+    ports:
+      - 8086
